@@ -118,7 +118,7 @@ const Portfolio = () => {
     { id: 5, image: Sherbrooke, name: '2290 Sherbrooke', description: 'Apartment - Montreal'},
     { id: 10, image: Sherbrooketwo, name: '2308 Sherbrooke', description: 'Apartment - Montreal'},
     { id: 10, image: Sherbrookefour, name: '2306 Sherbrooke', description: 'Apartment - Montreal'},
-    { id: 10, image: Sherbrookethree, name: '2314 Sherbrooke', description: 'Apartment - Montrea;'},
+    { id: 10, image: Sherbrookethree, name: '2314 Sherbrooke', description: 'Apartment - Montreal'},
     { id: 10, image: StJacques, name: '7388 St Jacques', description: 'Apartment - Montreal'},
     { id: 6, image: MarieAnne, name: '2189 - 2199 Marie-Anne', description: 'Apartment - Montreal'},
     { id: 7, image: Dandurand, name: '2700 - 2710 Dandurand', description: 'Apartment - Montreal'},
