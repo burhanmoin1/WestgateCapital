@@ -1,0 +1,87 @@
+.about-us-full-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    padding: 100px;
+  }
+  
+  .about-us-full-image {
+    flex: 1;
+    max-width: 28%;
+    margin-bottom: -30px;
+    margin-top: 50px;
+    max-height: 10%; 
+    margin-left: 280px;
+    margin-right: 38px;
+  }
+  
+  .about-us-full-details {
+    flex: 1;
+    font-family: "CantoriaMTPro";
+    max-width: 40%;
+    margin-top: 50px;
+    color: black;
+  }
+  
+  .about-us-full-details h2 {
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+    
+  .about-us-full-details h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 180px;
+    height: 4px;
+    background-color: black;
+  }
+
+  .about-us-full-details p {
+    font-size: 20px;
+    line-height: 180%
+  }
+  
+  @media (max-width: 767.98px) {
+    .about-us-full-container {
+      flex-direction: column;
+      padding: 40px;
+    }
+  
+    .about-us-full-image {
+      max-width: 100%;
+      max-height: auto;
+      margin-top: 80px !important;
+      margin: 0 auto 20px;
+    }
+  
+    .about-us-full-details {
+      max-width: 100%;
+      text-align: start;
+    }
+  
+    .about-us-full-details h2 {
+      font-size: 38px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .about-us-full-details h2::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background-color: black;
+    }
+      
+    .about-us-full-details p {
+        font-size: 22px;
+        line-height: 180%;
+        margin-left: 8px;
+      }
+  }
