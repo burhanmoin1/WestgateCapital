@@ -10,7 +10,7 @@ const AboutUsComponent = () => {
         <div className="about-us-details">
           <h2 className='about-us-heading'>About Us</h2>
           <p>
-            FyRealty is a leading real estate company with a commitment to providing outstanding service and value to buyers and sellers.
+            Westgate Capital is a leading real estate company with a commitment to providing outstanding service and value to buyers and sellers.
             We are known for developing quality working relationships with our clientele; relationships based on respect, integrity, and trust.
           </p>
           <Link to="/about-us" className="learn-more-container">
