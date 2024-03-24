@@ -9,7 +9,6 @@
   .portfolioheading {
     font-size: 2rem;
     margin-bottom: 10px;
-    font-weight: bold;
     letter-spacing: 0.1cm;
   }
 
@@ -57,7 +56,6 @@
   
   .portfolio-item h3 {
     margin: 10px 0;
-    font-weight: bold;
     letter-spacing: 0.05cm;
 
   }
@@ -78,7 +76,6 @@
     .portfolioheading {
       font-size: 1.2rem;
       margin-bottom: 10px;
-      font-weight: bold;
       letter-spacing: 0.1cm;
     }
   
@@ -116,7 +113,6 @@
     
     .portfolio-item h3 {
       margin: 10px 0;
-      font-weight: bold;
       font-size: 100%;
       letter-spacing: 0.05cm;
       text-transform: uppercase;

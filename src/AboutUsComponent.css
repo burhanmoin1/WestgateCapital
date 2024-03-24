@@ -9,7 +9,7 @@
     flex: 1;
     max-width: 21%;
     margin-bottom: -30px;
-    max-height: 10%; 
+    
     margin-left: 280px;
     margin-right: 38px;
   }
@@ -37,7 +37,6 @@
     position: relative;
     font-size: 58px;
     margin-bottom: 40px;
-    font-weight: 600;
   }
     
   .about-us-details h2::after {
@@ -63,7 +62,7 @@
   
     .about-us-image {
       max-width: 100%;
-      max-height: auto;
+      height: 10vh !important;
       margin: 0 auto 20px;
     }
   
