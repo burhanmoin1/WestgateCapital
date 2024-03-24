@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import AboutUs from './images/Building4.jpg';
 import './AboutUsFull.css';
 import CustomNavbar from './Navbar';
 import Footer from './Footer';
 import ContactUs from './ContactUs';
+import { useLocation } from 'react-router-dom';
 
 const AboutUsFull = () => {
     return (
@@ -24,6 +25,14 @@ const AboutUsFull = () => {
   }
   
   function AboutUsPage() {
+    const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/about-us') {
+      document.title = 'About Us - Westgate Capital';
+    } 
+
+  }, [location.pathname]);
     return (
       <React.Fragment>
         <CustomNavbar />

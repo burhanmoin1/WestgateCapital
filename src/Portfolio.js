@@ -17,6 +17,7 @@ import Dandurand from './images/Portfolio/Dandurand/0003-003_11_DSC08225.jpg';
 import Hochelaga8578 from './images/Portfolio/Hochelaga-8578-8590/0002-002_6_DSC07715.jpg';
 import Hochelaga3657 from './images/Portfolio/Hochelaga-3657-3667/0002-002_10_DSC07667.jpg';
 import VillImage from './images/vill.jpg'; 
+import { useLocation } from 'react-router-dom';
 
 const PortfolioItem = ({ image, name, description }) => {
   const cleanedName = name.replace(/[\d-]/g, '').trim();
@@ -169,6 +170,14 @@ const Portfolio = () => {
 };
 
 function PortfolioPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/portfolio') {
+      document.title = 'Portfolio - Westgate Capital';
+    } 
+
+  }, [location.pathname]);
     return (
       <React.Fragment>
         <NavBar />
