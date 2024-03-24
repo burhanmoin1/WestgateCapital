@@ -6,17 +6,17 @@ import Footer from './Footer';
 import ContactUs from './ContactUs';
 import Frontenac from './images/Frontenac.jpg';
 import CasgrainImage from './images/Casgrain.jpg';
-const Fullum = 'https://property-images-112.s3.us-east-2.amazonaws.com/images/Fullum.jpg';
-const Sherbrooke = 'https://property-images-112.s3.us-east-2.amazonaws.com/Portfolio/Sherbrooke/0001-001_1_DSC08005.jpg';
-const StJacques = 'https://property-images-112.s3.us-east-2.amazonaws.com/Portfolio/St Jacques-7388/DJI_0884.jpg';
-const Sherbrooketwo = 'https://property-images-112.s3.us-east-2.amazonaws.com/Portfolio/Sherbrooke/2308-2310-Rue-Sherbrooke-Est-Montreal-originalCanada-H2K-1E5/0002-002_7_DSC07804.jpg';
-const Sherbrookethree = 'https://property-images-112.s3.us-east-2.amazonaws.com/Portfolio/Sherbrooke-E-2314-2316-Montreal-original Quebec-Canada-H2K-1E5/0002-002_10_DSC07847.jpg';
-const Sherbrookefour = 'https://property-images-112.s3.us-east-2.amazonaws.com/Portfolio/Sherbrooke-E-2306-MontrealoriginalQuebec-Canada-H2K-1E5/0001-001_10_DSC07934.jpg';
-const MarieAnne = 'https://property-images-112.s3.us-east-2.amazonaws.com/Portfolio/Marie-Anne/0003-003_11_DSC07775.jpg';
-const Dandurand = 'https://property-images-112.s3.us-east-2.amazonaws.com/Portfolio/Dandurand/0003-003_11_DSC08225.jpg';
-const Hochelaga8578 = 'https://property-images-112.s3.us-east-2.amazonaws.com/Portfolio/Hochelaga-8578-8590/0002-002_6_DSC07715.jpg';
-const Hochelaga3657 = 'https://property-images-112.s3.us-east-2.amazonaws.com/Portfolio/Hochelaga-3657-3667/0002-002_10_DSC07667.jpg';
-const VillImage = 'https://property-images-112.s3.us-east-2.amazonaws.com/images/vill.jpg'; 
+import Fullum from './images/Fullum.jpg';
+import Sherbrooke from './images/Portfolio/Sherbrooke/0001-001_1_DSC08005.jpg';
+import StJacques from './images/Portfolio/St Jacques-7388/DJI_0884.jpg';
+import Sherbrooketwo from './images/Portfolio/Sherbrooke/2308-2310-Rue-Sherbrooke-Est-Montreal-originalCanada-H2K-1E5/0002-002_7_DSC07804.jpg';
+import Sherbrookethree from './images/Portfolio/Sherbrooke-E-2314-2316-Montreal-original Quebec-Canada-H2K-1E5/0002-002_10_DSC07847.jpg';
+import Sherbrookefour from './images/Portfolio/Sherbrooke-E-2306-MontrealoriginalQuebec-Canada-H2K-1E5/0001-001_10_DSC07934.jpg';
+import MarieAnne from './images/Portfolio/Marie-Anne/0003-003_11_DSC07775.jpg';
+import Dandurand from './images/Portfolio/Dandurand/0003-003_11_DSC08225.jpg';
+import Hochelaga8578 from './images/Portfolio/Hochelaga-8578-8590/0002-002_6_DSC07715.jpg';
+import Hochelaga3657 from './images/Portfolio/Hochelaga-3657-3667/0002-002_10_DSC07667.jpg';
+import VillImage from './images/vill.jpg'; 
 
 const PortfolioItem = ({ image, name, description }) => {
   const cleanedName = name.replace(/[\d-]/g, '').trim();
