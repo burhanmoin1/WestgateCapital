@@ -6,9 +6,9 @@
   }
   
   .about-us-full-image {
-    max-width: 28%;
-    margin-bottom: -30px;
-    margin-top: 50px;
+    max-width: 32%;
+    margin-bottom: -20px;
+    margin-top: 40px;
     max-height: 10%; 
     margin-left: 280px;
     margin-right: 38px;
@@ -17,14 +17,14 @@
   .about-us-full-details {
     flex: 1;
     font-family: "CantoriaMTPro";
-    max-width: 40%;
-    margin-top: 50px;
+    max-width: 55%;
+    margin-top: 100px;
     color: black;
   }
   
   .about-us-full-details h2 {
     position: relative;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 20px;
   }
     
@@ -39,7 +39,7 @@
   }
 
   .about-us-full-details p {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 180%
   }
   
