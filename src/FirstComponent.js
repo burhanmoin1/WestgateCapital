@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import backgroundImage from './images/Casgrain.jpg';
+import { motion } from "framer-motion";
 import './FirstComponent.css';
 
 const FirstComponent = () => {
@@ -45,7 +46,7 @@ const FirstComponent = () => {
       <div className="overlay"></div>
       <div className="content">
         <h1 className='first-heading'>Building The Foundation To Your Dreams</h1>
-        <button className="arrow-button" onClick={handleButtonClick}>&#8595;</button>
+        <motion.button initial={{opacity:0}} animate={{opacity: 1}} transition={{delay: 0.3}} className="arrow-button" onClick={handleButtonClick}>&#8595;</motion.button>
       </div>
     </div>
   );

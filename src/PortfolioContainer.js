@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import './PortfolioContainer.css'; 
 import { Link, useLocation  } from 'react-router-dom';
-import Frontenac from './images/Portfolio/Frontenac/0002-002_1_DSC08100.jpg';
-import CasgrainImage from './images/Portfolio/Casgrain/0002-002_8_DSC08074.jpg';
-import Fullum from './images/Portfolio/Fullum/0003-003_10_DSC07911.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBuilding } from '@fortawesome/free-solid-svg-icons';
+import Frontenac from './images/Frontenac.jpg';
+import CasgrainImage from './images/Casgrain.jpg';
+import Fullum from './images/Fullum.jpg';
+import { motion } from "framer-motion";
 
 const PortfolioContainer = () => {   
 
@@ -36,7 +35,7 @@ const PortfolioContainer = () => {
   return (
     <div className="services-container">
       <div className="heading-container">
-        <h2 className="main-heading">Portfolio</h2>
+        <motion.h2 animate={{fontSize: 100}} className="main-heading">Portfolio</motion.h2>
         <h2 className="second-heading">Our Latest Acquisitions</h2>
       </div>
       {servicesData.map((service, index) => (
@@ -48,6 +47,7 @@ const PortfolioContainer = () => {
         <div key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
           <div className="image-container">
           <img
+          loading='lazy'
               src={service.image}
               alt={`${service.text.toLowerCase().replace(/\s+/g, '-')}`}
               className={`service-image ${service.className}`}

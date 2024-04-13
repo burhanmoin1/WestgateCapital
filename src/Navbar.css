@@ -11,12 +11,13 @@
     position: relative;
     text-decoration: none;
     color: white;
+    animation: 0.5s nav-items-animate ease-in;
   }
 
   .bg-transparent{
     border-bottom: white;
     background-color: rgba(0, 66, 38, 1) !important;
-    font-family: "CantoriaMTPro";
+    font-family: "Lexend Exa";
   }
 
   .navbar-logo {
@@ -28,8 +29,37 @@
     z-index: 1000;
     font-size: 32px;
     line-height: 0px;
-    font-family: "CantoriaMTPro";
+    transition: 0.3s logo;
     letter-spacing: 2px;
+    
+  }
+
+  @keyframes logo-animate {
+
+    from {
+      transform: translateY(-100px);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+    
+  }
+
+  @keyframes nav-items-animate {
+
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+    
+  }
+
+  .logo-container {
+    animation: 0.7s logo-animate ease-in;
   }
 
   .navbar-logo{

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
-import logo from './images/Westgate Capital Logo.png';
 import Hamburger from 'hamburger-react';
 
 const CustomNavbar = () => {
@@ -19,7 +18,7 @@ const CustomNavbar = () => {
         <Hamburger
           toggled={isOpen}
           toggle={setOpen}
-          duration={0.5}
+          duration={0.2}
           className="hamburger-icon"
         />
       </Navbar.Toggle>

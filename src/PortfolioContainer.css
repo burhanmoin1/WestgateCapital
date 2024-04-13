@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "CantoriaMTPro";
+    font-family: "Lexend Exa";
     font-size: 28px;
   }
   
@@ -10,15 +10,15 @@
     display: flex;
     width: 100%;
     margin: 70px;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
   }
 
   .heading-container {
     display: flex;
     align-items: flex-start;
     margin: 10px;
-    margin-left: 140px;
+    margin-left: 200px;
     position: relative;
   }
 
@@ -54,7 +54,7 @@
 
   .second-heading {
     margin-top: 40px;
-    margin-left: -200px;
+    margin-left: -280px;
     position: relative;
   }
   
@@ -77,6 +77,14 @@
     margin-right: 10px;
   }
 
+  .scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
   .service-para {
     width: 90%;
     font-size: 16px;
@@ -86,9 +94,20 @@
   .service-image {
     max-width: 700px; 
     height: auto;
+    opacity: 0;
+    scale: 0.3;
     margin-bottom: 12px;
     margin-right: 15px;
     border-radius: 2%;
+    animation: image-scaler linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 50%;
+  }
+
+  @keyframes image-scaler {
+    to {scale: 1; opacity: 1;}
+
   }
 
   .service-item.even .image-container {
@@ -172,8 +191,8 @@
   }
 
   .main-heading::before {
-    width: 8px; 
-    height: 6px; 
+    width: 5px; 
+    height: 4px; 
 }
 
   .heading-container {
@@ -188,7 +207,8 @@
 
   .second-heading {
     margin-top: 40px;
-    margin-left: -100px;
+    margin-left: -120px;
+    font-size: 20px;
     position: relative; 
   }
 
@@ -198,6 +218,10 @@
   .service-item .image-container {
     width: 80%; /* Adjust image container width */
     margin: 0 auto 10px; /* Center the image */
+  }
+
+  .service-image {
+    animation-range-end: 28%;
   }
 
   .service-item .text-container {

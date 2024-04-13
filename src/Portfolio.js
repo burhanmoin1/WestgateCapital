@@ -128,29 +128,6 @@ const Portfolio = () => {
     
   ];
 
-    useEffect(() => {
-    const criticalImages = [
-      Frontenac,
-      CasgrainImage,
-      Fullum,
-      Sherbrooke,
-      StJacques,
-      Sherbrooketwo,
-      Sherbrookefour,
-      Sherbrookethree,
-      MarieAnne,
-      Dandurand,
-      Hochelaga8578,
-      Hochelaga3657,
-      VillImage
-    ];
-
-    criticalImages.forEach((imgSrc) => {
-      const img = new Image();
-      img.src = imgSrc;
-    });
-  }, []);
-
   return (
     <div className="portfolio">
       <h1 className='portfolioheading'>PORTFOLIO</h1>
