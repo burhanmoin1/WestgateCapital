@@ -47,7 +47,6 @@ const PortfolioContainer = () => {
         <div key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
           <div className="image-container">
           <img
-          loading='lazy'
               src={service.image}
               alt={`${service.text.toLowerCase().replace(/\s+/g, '-')}`}
               className={`service-image ${service.className}`}

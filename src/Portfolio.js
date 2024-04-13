@@ -110,7 +110,6 @@ const PortfolioItem = ({ image, name, description }) => {
 };
 
 const Portfolio = () => {
-  // Sample data for portfolio items
   const portfolioData = [
     { id: 2, image: Frontenac, name: '2087 - 2093 Frontenac', description: 'Apartment - Montreal' },
     { id: 6, image: MarieAnne, name: '2189 - 2199 Marie-Anne', description: 'Apartment - Montreal'},
