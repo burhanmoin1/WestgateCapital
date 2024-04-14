@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './PortfolioContainer.css'; 
-import { Link, useLocation  } from 'react-router-dom';
+import { Link  } from 'react-router-dom';
 import Frontenac from './images/Frontenac.jpg';
 import CasgrainImage from './images/Casgrain.jpg';
 import Fullum from './images/Fullum.jpg';
@@ -44,9 +44,13 @@ const PortfolioContainer = () => {
          to={`/services/${service.text.toLowerCase().replace(/\s+/g, '-')}`}
          className="service-link"
        >
-        <div key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
+        <div  key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
           <div className="image-container">
-          <img
+          <motion.img
+              loading='eager'
+              initial={{scale: 0.4, opacity: 0}} 
+              whileInView={{scale: 1, opacity: 1, 
+              transition: {duration: 0.6, type: 'tween', stiffness: 500}}} 
               src={service.image}
               alt={`${service.text.toLowerCase().replace(/\s+/g, '-')}`}
               className={`service-image ${service.className}`}

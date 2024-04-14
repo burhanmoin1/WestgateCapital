@@ -45,8 +45,8 @@ const FirstComponent = () => {
     <div className="first-container" style={containerStyle}>
       <div className="overlay"></div>
       <div className="content">
-        <h1 className='first-heading'>Building The Foundation To Your Dreams</h1>
-        <motion.button initial={{opacity:0}} animate={{opacity: 1}} transition={{delay: 0.3}} className="arrow-button" onClick={handleButtonClick}>&#8595;</motion.button>
+        <motion.h1 initial={{opacity:0}} animate={{opacity: 1}} transition={{duration: 0.3}} className='first-heading'>Building The Foundation To Your Dreams</motion.h1>
+        <button className="arrow-button" onClick={handleButtonClick}>&#8595;</button>
       </div>
     </div>
   );

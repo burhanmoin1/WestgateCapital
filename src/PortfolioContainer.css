@@ -12,10 +12,6 @@
     margin: 70px;
     justify-content: center;
     align-items: center;
-    animation: image-scaler linear forwards;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 30%;
   }
 
   .heading-container {
@@ -98,21 +94,12 @@
   .service-image {
     max-width: 700px; 
     height: auto;
-    
     margin-bottom: 12px;
     margin-right: 15px;
     border-radius: 2%;
     
   }
 
-  @keyframes image-scaler {
-
-    from {opacity: 0;
-      scale: 0.3;}
-
-    to {scale: 1; opacity: 1;}
-
-  }
 
   .service-item.even .image-container {
     order: 2;
