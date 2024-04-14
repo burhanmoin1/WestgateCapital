@@ -35,7 +35,7 @@ const PortfolioContainer = () => {
   return (
     <div className="services-container">
       <div className="heading-container">
-        <motion.h2 animate={{fontSize: 100}} className="main-heading">Portfolio</motion.h2>
+        <motion.h2 className="main-heading">Portfolio</motion.h2>
         <h2 className="second-heading">Our Latest Acquisitions</h2>
       </div>
       {servicesData.map((service, index) => (
@@ -47,9 +47,6 @@ const PortfolioContainer = () => {
         <div  key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
           <div className="image-container">
           <motion.img
-              initial={{scale: 0.4, opacity: 0}} 
-              whileInView={{scale: 1, opacity: 1, 
-              transition: {duration: 0.6, type: 'tween', stiffness: 500}}} 
               src={service.image}
               alt={`${service.text.toLowerCase().replace(/\s+/g, '-')}`}
               className={`service-image ${service.className}`}
