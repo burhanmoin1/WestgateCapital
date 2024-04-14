@@ -47,7 +47,7 @@ const PortfolioContainer = () => {
         <div  key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
           <div className="image-container">
           <motion.img
-              loading='eager'
+              loading='lazy'
               initial={{scale: 0.4, opacity: 0}} 
               whileInView={{scale: 1, opacity: 1, 
               transition: {duration: 0.6, type: 'tween', stiffness: 500}}} 
