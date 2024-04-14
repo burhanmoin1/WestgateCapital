@@ -41,7 +41,7 @@ const PortfolioContainer = () => {
       {servicesData.map((service, index) => (
          <Link
          key={service.id}
-         to={`/services/${service.text.toLowerCase().replace(/\s+/g, '-')}`}
+         to={`/property/${service.text.toLowerCase().replace(/\s+/g, '-').split('-').pop()}`}
          className="service-link"
        >
         <div  key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
