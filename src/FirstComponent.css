@@ -32,11 +32,13 @@
 
   .first-heading {
     font-size: 60px;
-    margin-left: 50px;
+    max-width: 80%;
+    margin-left: 200px;
     margin-top: 120px;
     letter-spacing: 1px;
     line-height: 80px;
-}
+    word-wrap: break-word;
+  }
 
 .arrow-button{
   width: 80px;
