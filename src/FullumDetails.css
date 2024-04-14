@@ -1,0 +1,162 @@
+.property-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 50px;
+    font-family: "Cantoria MT W04 Regular";
+    background-color: #004226;
+    color: white;
+    position: relative;
+  }
+  
+  .property-details-container h1 {
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    left: 40%;
+  }
+  
+  .fullumline {
+    width: 7.5%;
+    border: none;
+    border-top: 4px solid white;
+    transform: translateX(-688%);
+    margin-top: 4.5%;
+  }
+  
+  .main-image {
+    width: 60%;
+    height: auto;
+    display: block;
+    border-radius: 2%;
+  }
+  
+  .image-preview {
+    width: 28%;
+    margin: 0px;
+    margin-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 20px;
+  }
+  
+  .image-preview img {
+    width: calc(33.33% - 5px); /* Adjust the width of individual preview images */
+    height: auto;
+    cursor: pointer;
+    border-radius: 6%;
+  }
+  
+  .image-preview img.active {
+    transform: scale(1.2);
+  }
+  
+  .property-description{
+    padding: 80px;
+    text-align: center;
+    position: absolute;
+    width: 40%;
+    left: 60%;
+    bottom: 30%;
+  }
+  
+  .property-description h2 {
+    margin-top: 20px;
+    font-size: 38px;
+    font-weight: bold;
+  }
+  
+  .property-description p{
+    font-size: 32px;
+  }
+  
+  .interested-button {
+    left: 0%;
+    position: relative;
+    transform: translate(-130%, -350%);
+    padding: 10px 20px;
+    font-size: 22px;
+    width: 10%;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  
+  @media (max-width: 700px) {
+    .property-details-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+    }
+    .property-details-container h1 {
+      font-weight: bold;
+      padding: 10px;
+      position: relative;
+      left: 0%;
+    }
+    .fullumline {
+      width: 80%;
+      border: none;
+      border-top: 4px solid white;
+      transform: translateX(-0%);
+      margin-top: -2%;
+    }
+    .main-image{
+      width: 120%;
+      height: 40vh;
+      border-radius: 2%;
+      transform: translateX(-9%);
+    }
+  
+    .slideshow-container,
+    .image-preview {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .image-preview {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      gap: 10px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .image-preview img {
+      width: 80px; /* Adjust image size for mobile */
+      height: auto;
+    }
+  
+    .property-description{
+      padding: 0px;
+      text-align: center;
+      position: inherit;
+      width: auto;
+      left: 0%;
+      bottom: 0%;
+    }
+  
+    .property-description h2 {
+      font-size: 22px;
+    }
+  
+    .property-description p {
+      font-size: 18px;
+    }
+  
+    .interested-button{
+      left: 22%;
+      transform: translate(-50%, 50%);
+      font-size: medium;
+      width: auto;
+    }
+  }
