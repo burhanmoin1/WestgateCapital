@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './Portfolio.css';
 import { Link } from 'react-router-dom';
 import NavBar from './Navbar';
@@ -21,25 +21,17 @@ import { useLocation } from 'react-router-dom';
 
 const PortfolioItem = ({ image, name, description }) => {
   const cleanedName = name.replace(/[\d-]/g, '').trim();
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
   let link;
 
   if (name === '2290 SHERBROOKE') {
     link = (
       <a href="sherbrookeone">
-        {isLoaded && (
           <img
             src={image}
             alt={name}
-            effect="opacity"
             className="portfolio-image"
           />
-        )}
         <h3>{name}</h3>
         <p>{description}</p>
       </a>
@@ -47,14 +39,11 @@ const PortfolioItem = ({ image, name, description }) => {
     } else if (name === '2308 SHERBROOKE') {
       link = (
         <a href="sherbrooketwo">
-          {isLoaded && (
             <img
               src={image}
               alt={name}
-              effect="opacity"
               className="portfolio-image"
             />
-          )}
           <h3>{name}</h3>
           <p>{description}</p>
         </a>
@@ -62,14 +51,11 @@ const PortfolioItem = ({ image, name, description }) => {
     } else if (name === '2306 SHERBROOKE') {
       link = (
         <a href="sherbrookethree">
-          {isLoaded && (
             <img
               src={image}
               alt={name}
-              effect="opacity"
               className="portfolio-image"
             />
-          )}
           <h3>{name}</h3>
           <p>{description}</p>
         </a>
@@ -77,14 +63,11 @@ const PortfolioItem = ({ image, name, description }) => {
     } else if (name === '2314 SHERBROOKE') {
       link = (
         <a href="sherbrookefour">
-          {isLoaded && (
             <img
               src={image}
               alt={name}
-              effect="opacity"
               className="portfolio-image"
             />
-          )}
           <h3>{name}</h3>
           <p>{description}</p>
         </a>
@@ -92,14 +75,11 @@ const PortfolioItem = ({ image, name, description }) => {
   } else {
     link = (
       <Link to={`/property/${cleanedName.replace(/\s+/g, '-').toLowerCase()}`}>
-        {isLoaded && (
           <img
             src={image}
             alt={name}
-            effect="opacity"
             className="portfolio-image"
           />
-        )}
         <h3>{name}</h3>
         <p>{description}</p>
       </Link>
