@@ -11,7 +11,7 @@
     position: relative;
     text-decoration: none;
     color: white;
-    animation: 0.5s nav-items-animate ease-in;
+    animation: 0.3s logo-animate ease-in;
   }
 
   .bg-transparent{
@@ -36,10 +36,12 @@
   @keyframes logo-animate {
 
     from {
-      transform: translateY(-100px);
+      opacity: 0;
+      transform: translateY(-10px);
     }
 
     to {
+      opacity: 1;
       transform: translateY(0);
     }
     
@@ -58,7 +60,7 @@
   }
 
   .logo-container {
-    animation: 0.7s logo-animate ease-in;
+    animation: 0.4s logo-animate ease-in;
   }
 
   .navbar-logo{
