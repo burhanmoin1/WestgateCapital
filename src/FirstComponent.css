@@ -78,5 +78,7 @@
         letter-spacing: 1px;
         margin-left: 10px;
         line-height: 60px;
+        max-width: 100%;
     }
+  
 }

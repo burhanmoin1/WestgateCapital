@@ -115,7 +115,7 @@
       position: fixed;
       top: 73px;
       right: -100%; /* Changed from -80% */
-      height: 55vh;
+      height: 48vh;
       width: 100%;
       transition: right 0.1s ease-in-out; /* Changed timing function */
       overflow-y: scroll;
@@ -163,7 +163,7 @@
       flex-direction: column;
       padding-top: 1rem;
       justify-content: flex-start;
-      padding-right: 40px;
+      padding-right: 50px;
     }
   
     .navbar-nav .nav-link {
