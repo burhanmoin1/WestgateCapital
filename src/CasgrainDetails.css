@@ -18,14 +18,7 @@
     position: relative;
     left: 40%;
   }
-  
-  .casgrainline {
-    width: 8%;
-    border: none;
-    border-top: 4px solid white;
-    transform: translateX(-635%);
-    margin-top: 4.5%;
-  }
+
   
   .main-image {
     width: 90% !important;
@@ -103,13 +96,7 @@
       position: relative;
       left: 0%;
     }
-    .casgrainline {
-      width: 60%;
-      border: none;
-      border-top: 4px solid white;
-      transform: translateX(-0%);
-      margin-top: -2%;
-    }
+
     .main-image{
       width: 120% !important;
       height: 40vh;
