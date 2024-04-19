@@ -35,7 +35,7 @@ const PortfolioContainer = () => {
   return (
     <div className="services-container">
       <div className="heading-container">
-        <motion.h2 className="main-heading">Portfolio</motion.h2>
+        <h2 className="main-heading">Portfolio</h2>
         <h2 className="second-heading">Our Latest Acquisitions</h2>
       </div>
       {servicesData.map((service, index) => (
@@ -44,7 +44,8 @@ const PortfolioContainer = () => {
          to={`/property/${service.text.toLowerCase().replace(/\s+/g, '-').split('-').pop()}`}
          className="service-link"
        >
-        <div  key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
+        <motion.div initial={{y:100}} whileInView={{y:0, scale:1.2}}
+              transition={{delay: 0.1, duration: 0.2}} key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
           <div className="image-container">
           <motion.img
               src={service.image}
@@ -56,7 +57,7 @@ const PortfolioContainer = () => {
             <h3 className="service-heading">{service.text}</h3>
             <p className='service-para'>{service.description}</p>
           </div>
-        </div>
+        </motion.div>
         </Link>
       ))}
       <Link to="/portfolio" className="explore-more-container">
