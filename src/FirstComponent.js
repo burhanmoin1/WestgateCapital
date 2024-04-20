@@ -11,7 +11,7 @@ const FirstComponent = () => {
     target: ref,
     offset: ["start start" , "end start"],
   });
-  const opacity = useTransform(scrollYProgress, [0,1], [1,0])
+  const opacity = useTransform(scrollYProgress, [0,0.7], [1,0])
 
   useEffect(() => {
     const handleScroll = () => {
