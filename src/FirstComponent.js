@@ -1,11 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import backgroundImage from './images/Casgrain.jpg';
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import './FirstComponent.css';
 
 const FirstComponent = () => {
+  const ref = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [containerHeight, setContainerHeight] = useState(700); // Initial height of the container
+  const [containerHeight, setContainerHeight] = useState(700);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start" , "end start"],
+  });
+  const opacity = useTransform(scrollYProgress, [0,1], [1,0])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +33,8 @@ const FirstComponent = () => {
     backgroundSize: 'cover',
     backgroundAttachment: 'fixed',
     transform: `translateY(-${scrollPosition * 0.1}px)`, // Adjust the speed by changing the multiplier
-    height: `${containerHeight}px`, // Set the dynamic height here
+    height: `${containerHeight}px`,
+    opacity
   };
 
   const handleButtonClick = () => {
@@ -42,13 +49,13 @@ const FirstComponent = () => {
   };
   
   return (
-    <div className="first-container" style={containerStyle}>
+    <motion.div ref={ref} className="first-container" style={containerStyle}>
       <div className="overlay"></div>
       <div className="content">
-        <motion.h1 initial={{opacity:0}} animate={{opacity: 1}} transition={{duration: 0.7}} className='first-heading'>Building The Foundation To Your Dreams</motion.h1>
+        <h1  className='first-heading'>Building The Foundation To Your Dreams</h1>
         <button className="arrow-button" onClick={handleButtonClick}>&#8595;</button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
