@@ -44,7 +44,7 @@ const PortfolioContainer = () => {
          to={`/property/${service.text.toLowerCase().replace(/\s+/g, '-').split('-').pop()}`}
          className="service-link"
        >
-        <motion.div initial={{y:100}} whileInView={{y:0, scale:1.2}}
+        <motion.div initial={{y:100}} whileInView={{y:0, scale:1.1}}
               transition={{delay: 0.1, duration: 0.2}} key={service.id} className={`service-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
           <div className="image-container">
           <motion.img
